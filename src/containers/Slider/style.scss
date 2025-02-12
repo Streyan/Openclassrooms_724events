@@ -39,6 +39,10 @@
         color: $primary;
       }
     }
+    &__pagination {
+      position: relative;
+      z-index: 99999;
+    }
     &__description {
       left: 0;
       bottom: 50px;

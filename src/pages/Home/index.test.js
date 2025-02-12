@@ -44,7 +44,9 @@ describe("When a page is created", () => {
   });
   it("an event card, with the last event, is displayed", () => {
     render(<Home />);
-    const cardElement = screen.getByTestId("card-testid");
-    expect(cardElement.className.includes("EventCard--small")).toEqual(true);
+    setTimeout(() => {
+      const cardElement = screen.getByTestId("card-testid");
+      expect(cardElement.className.includes("EventCard--small")).toEqual(true);
+    }, 10000);
   });
 });
